@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "id": 1,
+    "type": "normal",
+    "input": "Marketing sync: Sophia will finalize the Q2 campaign deck by Friday. Jay needs to send updated budget numbers by Wednesday. Team agreed to launch email draft review next Monday.",
+    "expected_behavior": "Should extract clear action items with owners and deadlines."
+  },
+  {
+    "id": 2,
+    "type": "normal",
+    "input": "Product meeting notes: Hanrui to revise onboarding flow mockup. Qianli will check customer feedback themes. Need follow-up with design team sometime next week.",
+    "expected_behavior": "Should turn rough notes into structured tasks, even if one deadline is vague."
+  },
+  {
+    "id": 3,
+    "type": "edge_case",
+    "input": "Ops call: maybe update dashboard? Yiyang mentioned maybe fixing the API issue but not sure who owns it. Someone should also check if the vendor responded.",
+    "expected_behavior": "Should identify unclear ownership and avoid inventing fake deadlines or assignments."
+  },
+  {
+    "id": 4,
+    "type": "human_review",
+    "input": "Client strategy call: Need to revisit pricing. Follow up with them soon. Action items were discussed but not fully decided because leadership still needs to approve.",
+    "expected_behavior": "Should summarize cautiously and note that some items require human review due to ambiguity."
+  },
+  {
+    "id": 5,
+    "type": "failure_risk",
+    "input": "Meeting recap: launch by Thursday? maybe Friday. Sophia or Jay to own outreach. Budget issue still unresolved. Could ask finance but not confirmed.",
+    "expected_behavior": "Should avoid hallucinating certainty where the notes are conflicting or incomplete."
+  }
+]
