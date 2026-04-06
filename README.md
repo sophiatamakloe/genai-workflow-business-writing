@@ -7,13 +7,6 @@
 **Walkthrough Video:** https://youtu.be/Heqk7RAfrlY
 
 ## Workflow Chosen
-Summarizing meeting notes into structured action items
-
-
-
-
-
-## Workflow Chosen
 Summarizing meeting notes into structured action items.
 
 ## Who the User Is
